@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="style/responsive.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+<style>
+   *{
+       margin: 0px;
+padding: 0px;
+font-family: 'Baloo Bhaina 2', cursive;
+}
+
+    nav{
+    position: fixed;
+/* height: 60px; */
+width: 100%;
+background-color: rgba(0, 0, 0, 0.904);
+display: flex;
+/* border: 2px solid white; */
+align-items: center;
+flex-direction: row;
+padding: 5px 0px;
+}
+.logo{
+    height: 40px;
+    width:40px;
+    /* border: 2px solid red; */
+    justify-content: left;
+margin-right: 15px;
+    margin-left: 35px;
+    cursor: pointer;
+    
+}
+#name{
+    
+    /* border: 2px solid rebeccapurple; */
+    width:300px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: yellow;
+}
+
+
+nav ul{
+   display: flex;
+    justify-content:right;
+    align-items: center;
+    /* height: 60px; */
+    width: 100%;
+/* flex-direction: column; */
+    flex-wrap: wrap;
+    /* border: 2px solid green; */
+}
+
+nav ul li{
+list-style: none;
+/* margin: 20px; */
+/* border: 2px solid green; */
+
+
+}
+nav ul li a{
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    text-decoration: none;
+    color:white; 
+margin:0px 20px;
+padding: 0px 25px;
+/* border: 2px solid red; */
+
+}
+
+nav ul li a:hover{
+    /* font-size: 1.4rem; */
+    font-weight:bolder;
+    color: yellow;
+}
+#hambergur{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 8px;
+    display: none;
+}
+.hambergur{
+height: 4px;
+background-color: white;
+margin: 3px;
+width: 30px;
+
+}
+
+/* navbar responsive start */
+@media only screen and (max-width:1130px ) and (min-width:965px){
+    nav ul li a{
+        font-size: 1.2rem;
+        /* font-weight: bold; */
+        text-decoration: none;
+        color:white; 
+    margin:0px 10px;
+    padding: 0px 20px;
+    /* border: 2px solid red; */
+    }
+
+}
+
+@media only screen and (max-width:966px ) and (min-width:857px){
+    nav ul li a{
+        font-size: 1.2rem;
+        /* font-weight: bold; */
+        text-decoration: none;
+        color:white; 
+    margin:0px 5px;
+    padding: 0px 15px;
+    /* border: 2px solid red; */
+    }
+   
+}
+@media only screen and (max-width:856px ){
+   
+  ul{
+      flex-direction: column;
+}
+
+    #name{
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: yellow;
+    }
+
+    nav ul{
+        display: none;
+    }
+    
+
+    #hambergur{
+
+display: block;
+}
+
+
+
+
+
+}
+@media only screen and (max-width:279px ) and (min-width:50px){
+.logo{
+    display: none;
+}
+#name{
+    display: none;
+}
+}
+   
+
+
+/* navbar responsive end */
+
+
+
+</style>
+</head>
+<body>
+    <nav>
+     
+        <img src="images/logo.jpg" alt="" srcset="" class="logo " >
+     <div id="name" >
+         ABHISHEK PANDEY
+     </div>
+ 
+    
+    <ul class="responsive_nav">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="skills.html">Skills</a></li>
+     <li><a href="qualification.html">Qualifications</a></li>
+     <li><a href="project.html">Projects</a></li>
+     <li><a href="conntactme.html">Contact Me</a></li>
+    
+    </ul>
+    <div id="hambergur">
+        <div class="hambergur"></div>
+        <div class="hambergur"></div>
+        <div class="hambergur"></div>
+    </div>
+     </nav>
+   
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
